@@ -1,0 +1,26 @@
+{
+  "name": "@pgspider/node-red-db2chart",
+  "version": "1.0.0",
+  "description": "Node-RED node for converting database data to chart",
+  "author": "Toshiba Corporation",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgspider/node-red-db2chart"
+  },
+  "keywords": [
+    "node-red",
+    "nodered",
+    "chart",
+    "conversion"
+  ],
+  "node-red" : {
+    "version": ">=1.0.0",
+    "nodes": {
+        "db2chart": "db2chart.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

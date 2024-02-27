@@ -1,0 +1,3945 @@
+[
+    {
+        "id": "12e118a8f9046434",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e66a254d7f3efae",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c295b4d5b794996",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "Int type with 2 columns, 1 record",
+        "query": "SELECT * FROM test_int_1;",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "348737fb771c9d57"
+            ]
+        ]
+    },
+    {
+        "id": "d11e710b1978f7c6",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "5335407f59778c7d"
+            ]
+        ]
+    },
+    {
+        "id": "6974e41ef2daf4b7",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37e9e4770605006e",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4accf84e916feaac",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "504659fe7d6fc4f6",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d1edbe7ee0adde5",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "348737fb771c9d57",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 760,
+        "y": 300,
+        "wires": [
+            [
+                "4e66a254d7f3efae",
+                "6974e41ef2daf4b7",
+                "37e9e4770605006e",
+                "4accf84e916feaac",
+                "504659fe7d6fc4f6",
+                "6d1edbe7ee0adde5",
+                "ca976bd334038a06"
+            ]
+        ]
+    },
+    {
+        "id": "5335407f59778c7d",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = '[{\"series\":[\"c1\",\"c2\"],\"data\":[[1],[2]],\"labels\":[\"0\"]}]'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg).have.property('payload', expected);\n\t}\n}]",
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "7c295b4d5b794996"
+            ]
+        ]
+    },
+    {
+        "id": "6e08b304d86ee5f1",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 1090,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca976bd334038a06",
+        "type": "json",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 160,
+        "wires": [
+            [
+                "6e08b304d86ee5f1"
+            ]
+        ]
+    },
+    {
+        "id": "46c233f86a6402b1",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "query": "-- test_int_1: int type with 2 columns and 1 record\nDROP table IF EXISTS test_int_1;\nCREATE TABLE test_int_1 (c1 int, c2 int);\nINSERT INTO test_int_1 VALUES (1, 2);\n\n-- test_int_2: Int type with 50 columns, 2 records\nDROP table IF EXISTS test_int_2;\nCREATE TABLE test_int_2 (c1 int, c2 int, c3 int, c4 int, c5 int, c6 int, c7 int, c8 int, c9 int, c10 int, c11 int, c12 int, c13 int, c14 int, c15 int, c16 int, c17 int, c18 int, c19 int, c20 int, c21 int, c22 int, c23 int, c24 int, c25 int, c26 int, c27 int, c28 int, c29 int, c30 int, c31 int, c32 int, c33 int, c34 int, c35 int, c36 int, c37 int, c38 int, c39 int, c40 int, c41 int, c42 int, c43 int, c44 int, c45 int, c46 int, c47 int, c48 int, c49 int, c50 int);\nINSERT INTO test_int_2 VALUES (1, -2, 3, 4, 5, 6, 7, 8, 9, 10, 11, -12, 13, 14, 15, 16, 17, 18 , 19, 20,  21, -22, 23, 24, 25, 26, 27, 28, 29, 30, 31, -32, 33, 34, 35, 36, 37, 38, 39, 40, 41, -42, 43, 44, 45, 46, 47, 48, 49, 50);\nINSERT INTO test_int_2 VALUES (-10, 20, 30, 40, 50, 60, -70, 80, 90, -100, 110, 120, 130, -140, 150, 160, 170, 180 , 190, -200,  210, 220, 230, 240, -250, 260, 270, 280, -290, 300, 310, 320, -330, 340, 3-50, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 500);\n\n-- test_double_1: Double type with 5 columns, 5 records\nDROP table IF EXISTS test_double_1;\nCREATE TABLE test_double_1 (c1 double precision, c2 double precision, c3 double precision, c4 double precision, c5 double precision);\nINSERT INTO test_double_1 VALUES (11425.254, 21.2145, 78945.1145, 471.1426, 7894.246);\nINSERT INTO test_double_1 VALUES (11111.123, 22222.245, 44444.578, 77777.124, 987564.2547);\nINSERT INTO test_double_1 VALUES (78945671.1145, 4567684254.245674, 578641657.2146764, 3464544143.24657, 78454343.24867);\nINSERT INTO test_double_1 VALUES (1.1, 2.2, 3.3, 4.4, 5.5);\nINSERT INTO test_double_1 VALUES (0, 787.124, 145.12364, 789.1246, 321.123);\n\n-- test_double_2: Double type with 10 columns, 50 records\nDROP table IF EXISTS test_double_2;\nCREATE TABLE test_double_2 (c1 double precision, c2 double precision, c3 double precision, c4 double precision, c5 double precision, c6 double precision, c7 double precision, c8 double precision, c9 double precision, c10 double precision);\nINSERT INTO test_double_2 VALUES (1345.145, 1878.157, 1575.24877, 1787.1547, 18783.154, 1345.145, 1878.157, 1575.24877, 1787.1547, 18783.154), (8744.15678, 157.548764, 784124.21657674, 786413.24874, 768431.21454, 8744.15678, 157.548764, 784124.21657674, 786413.24874, 768431.21454), (74871231.1657, 15761.165761, 186764.121, 1567.1567, 476.1654, 74871231.1657, 15761.165761, 186764.121, 1567.1567, 476.1654), (2154.154, 457.1354, 7867, 571.321467, 74811.157101, 79831.154744, 2154.154, 457.1354, 7867, 571.321467), (4871.15414, 214687.4422, 165733.2454, 1543.1657, 782135.157431, 4871.15414, 214687.4422, 165733.2454, 1543.1657, 782135.157431);\nINSERT INTO test_double_2 VALUES (-1345.145, -1878.157, -1575.24877, -1787.1547, -18783.154, 0, 1, 2 , 3, 4), (-8744.15678, -157.548764, -784124.21657674, -786413.24874, -768431.21454, 5, 6, 7, 8 ,9), (-74871231.1657, -15761.165761, -186764.121, -1567.1567, -476.1654, 10, 11, 12, 13, 14), (-2154.154, -457.1354, -7867, -571.321467, -74811.157101, -79831.154744, 15, 16, 17, 18 ), (-4871.15414, -214687.4422, -165733.2454, -1543.1657, -782135.157431, 20, 21, 22, 23, 24);\nINSERT INTO test_double_2 VALUES (0, 1, 2 , 3, 4, 5, 6, 7, 8, 9), (5, 6, 7, 8 ,9, 10, 11, 12, 13, 14), (10, 11, 12, 13, 14, 15, 16, 17, 18, 19), (15, 16, 17, 18 ,19, 20, 21, 22, 23, 24), (20, 21, 22, 23, 24, 15, 16, 17, 18 ,19);\nINSERT INTO test_double_2 VALUES (0, -1, -2 , -3, -4, -5, -6, -7, -8 ,-9), (-10, -11, -12, -13, -14, -15, -16, -17, -18 ,-19), (-20, -21, -22, -23, -24, 0, 1, 2 , 3, 4), (5, 6, 7, 8 ,9, 0, 11, 12, 13, 14), (15, 16, 17, 18 ,19, 20, 21, 22, 23, 24);\nINSERT INTO test_double_2 VALUES (79761413154.156732167, 76168713.24687613, 7932135431.1657631, 794312187.2187164, 2454231345.168761, 79843167.4761, 15461.1574, 78761.16764, 165761.54611574661, 15761), (784321.16873134351, 165764131, 76134, 157361, 784303431, 78613131.761313, 1654967476.165761, 165761.16761, 4843031.16761364, 7613.1544512), (2313154.1564, 761313.1576, 461313.15761, 798303.13461, 967611.165761, 93784.16764, 794313.321654, 71313.13467, 16736131.16761, 9713464.165761), (1541321.145, 76512, 1567613461316574610, 176134313465, 15421, 165761, 784131, 16576134, 16546134, 1546515), (1.1, 3.3, 4.5, 17.54, 14.2, 47.23, 62.5, 47.23, 14.23, 15.12);\nINSERT INTO test_double_2 (SELECT * FROM test_double_2);\n\n-- test_time: date type with 2 columns and 2 records\nDROP table IF EXISTS test_time;\nCREATE TABLE test_time (c1 date, c2 date);\ninsert into test_time values ('2023-01-02', '2023-01-03');\ninsert into test_time values ('1998-02-02', '1978-02-03');\n\n-- test_text: Text type with 8 columns, 4 records\nDROP table IF EXISTS test_text;\nCREATE TABLE test_text (c1 text, c2 text, c3 text, c4 text, c5 text, c6 text, c7 text, c8 text);\ninsert into test_text values ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), ('aa', 'bb', 'cc', 'dd', 'ee', 'ff', 'rr', 'yy'), ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'T'), ('AA', 'BB', 'CC', 'DD', 'EE', 'FF', 'DD', 'YY');\n\n-- test_1_column: int type with 2 columns and 1 record\nDROP table IF EXISTS test_1_column;\nCREATE TABLE test_1_column (c1 int);\nINSERT INTO test_1_column VALUES (1), (2);\n\n",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de1d0d1c920abd57",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "46c233f86a6402b1"
+            ]
+        ]
+    },
+    {
+        "id": "a5ad9faa0ebf53a8",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Prepare test data on Postgres server",
+        "info": "",
+        "x": 200,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "feb2243da56dd3ea",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Int type with 2 columns, 1 record",
+        "info": "",
+        "x": 190,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "07adf3ac2ce11645",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "93cc558241b06235",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "Int type with 50 columns, 2 records",
+        "query": "SELECT * FROM test_int_2;",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 520,
+        "y": 680,
+        "wires": [
+            [
+                "e762f630e62a9196"
+            ]
+        ]
+    },
+    {
+        "id": "0134e54caa27a4f8",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "2ccdf1b676a8ef82"
+            ]
+        ]
+    },
+    {
+        "id": "fb3748745ac4026d",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "193d98b6731d0350",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96073202edb7cd6e",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7140c979dad4ad94",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4f07861e2cc025d",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e762f630e62a9196",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 760,
+        "y": 680,
+        "wires": [
+            [
+                "07adf3ac2ce11645",
+                "fb3748745ac4026d",
+                "193d98b6731d0350",
+                "96073202edb7cd6e",
+                "7140c979dad4ad94",
+                "a4f07861e2cc025d",
+                "100c2736c72f6bae"
+            ]
+        ]
+    },
+    {
+        "id": "2ccdf1b676a8ef82",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = '[{\"series\":[\"c1\",\"c2\",\"c3\",\"c4\",\"c5\",\"c6\",\"c7\",\"c8\",\"c9\",\"c10\",\"c11\",\"c12\",\"c13\",\"c14\",\"c15\",\"c16\",\"c17\",\"c18\",\"c19\",\"c20\",\"c21\",\"c22\",\"c23\",\"c24\",\"c25\",\"c26\",\"c27\",\"c28\",\"c29\",\"c30\",\"c31\",\"c32\",\"c33\",\"c34\",\"c35\",\"c36\",\"c37\",\"c38\",\"c39\",\"c40\",\"c41\",\"c42\",\"c43\",\"c44\",\"c45\",\"c46\",\"c47\",\"c48\",\"c49\",\"c50\"],\"data\":[[1,-10],[-2,20],[3,30],[4,40],[5,50],[6,60],[7,-70],[8,80],[9,90],[10,-100],[11,110],[-12,120],[13,130],[14,-140],[15,150],[16,160],[17,170],[18,180],[19,190],[20,-200],[21,210],[-22,220],[23,230],[24,240],[25,-250],[26,260],[27,270],[28,280],[29,-290],[30,300],[31,310],[-32,320],[33,-330],[34,340],[35,-47],[36,360],[37,370],[38,380],[39,390],[40,400],[41,410],[-42,420],[43,430],[44,440],[45,450],[46,460],[47,470],[48,480],[49,490],[50,500]],\"labels\":[\"0\",\"1\"]}]'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg).have.property('payload', expected);\n\t}\n}]",
+        "x": 280,
+        "y": 680,
+        "wires": [
+            [
+                "93cc558241b06235"
+            ]
+        ]
+    },
+    {
+        "id": "125aee685e14c43c",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 1090,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "100c2736c72f6bae",
+        "type": "json",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 540,
+        "wires": [
+            [
+                "125aee685e14c43c"
+            ]
+        ]
+    },
+    {
+        "id": "65fdcc39bf5e04f6",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Int type with 50 columns, 2 records",
+        "info": "",
+        "x": 200,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c10b21873e487db0",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20e4317882c540d7",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "Double type with 5 columns, 5 records",
+        "query": "SELECT * FROM test_double_1;",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 530,
+        "y": 1080,
+        "wires": [
+            [
+                "18ec5e1cc280840c"
+            ]
+        ]
+    },
+    {
+        "id": "f1d170012841e71d",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1080,
+        "wires": [
+            [
+                "a4e11b70eac61544"
+            ]
+        ]
+    },
+    {
+        "id": "f6eecfe595cd7d99",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "021cc494b479285b",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "183386d8ef473694",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "599a308917c3cbc2",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79421b1b46a6de17",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18ec5e1cc280840c",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 760,
+        "y": 1080,
+        "wires": [
+            [
+                "c10b21873e487db0",
+                "f6eecfe595cd7d99",
+                "021cc494b479285b",
+                "183386d8ef473694",
+                "599a308917c3cbc2",
+                "79421b1b46a6de17",
+                "0b1ec90fa9c4abcb"
+            ]
+        ]
+    },
+    {
+        "id": "a4e11b70eac61544",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = '[{\"series\":[\"c1\",\"c2\",\"c3\",\"c4\",\"c5\"],\"data\":[[11425.254,11111.123,78945671.1145,1.1,0],[21.2145,22222.245,4567684254.245674,2.2,787.124],[78945.1145,44444.578,578641657.2146764,3.3,145.12364],[471.1426,77777.124,3464544143.24657,4.4,789.1246],[7894.246,987564.2547,78454343.24867,5.5,321.123]],\"labels\":[\"0\",\"1\",\"2\",\"3\",\"4\"]}]'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg).have.property('payload', expected);\n\t}\n}]",
+        "x": 280,
+        "y": 1080,
+        "wires": [
+            [
+                "20e4317882c540d7"
+            ]
+        ]
+    },
+    {
+        "id": "771bf5e361b783e3",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 1130,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b1ec90fa9c4abcb",
+        "type": "json",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 940,
+        "wires": [
+            [
+                "771bf5e361b783e3"
+            ]
+        ]
+    },
+    {
+        "id": "2b6c77712137ff28",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Double type with 5 columns, 5 records",
+        "info": "",
+        "x": 210,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "4ef7d1afb19f6035",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4936364dbc5af4b5",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "Double type with 10 columns, 50 records",
+        "query": "SELECT * FROM test_double_2;",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 540,
+        "y": 1440,
+        "wires": [
+            [
+                "c788d2bf8ed4b4e0"
+            ]
+        ]
+    },
+    {
+        "id": "d2d0fc304ba1d4d3",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1440,
+        "wires": [
+            [
+                "d890f0bd98a65fa7"
+            ]
+        ]
+    },
+    {
+        "id": "bde99e7bc0c840aa",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b922c8cc5f2d8758",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52c42b888d197581",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5369358edf9020b9",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2763774fedce3a2",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c788d2bf8ed4b4e0",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 780,
+        "y": 1440,
+        "wires": [
+            [
+                "4ef7d1afb19f6035",
+                "bde99e7bc0c840aa",
+                "b922c8cc5f2d8758",
+                "52c42b888d197581",
+                "5369358edf9020b9",
+                "d2763774fedce3a2",
+                "62f57469c5ae8e88"
+            ]
+        ]
+    },
+    {
+        "id": "d890f0bd98a65fa7",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = '[{\"series\":[\"c1\",\"c2\",\"c3\",\"c4\",\"c5\",\"c6\",\"c7\",\"c8\",\"c9\",\"c10\"],\"data\":[[1345.145,8744.15678,74871231.1657,2154.154,4871.15414,-1345.145,-8744.15678,-74871231.1657,-2154.154,-4871.15414,0,5,10,15,20,0,-10,-20,5,15,79761413154.15674,784321.1687313435,2313154.1564,1541321.145,1.1,1345.145,8744.15678,74871231.1657,2154.154,4871.15414,-1345.145,-8744.15678,-74871231.1657,-2154.154,-4871.15414,0,5,10,15,20,0,-10,-20,5,15,79761413154.15674,784321.1687313435,2313154.1564,1541321.145,1.1],[1878.157,157.548764,15761.165761,457.1354,214687.4422,-1878.157,-157.548764,-15761.165761,-457.1354,-214687.4422,1,6,11,16,21,-1,-11,-21,6,16,76168713.24687614,165764131,761313.1576,76512,3.3,1878.157,157.548764,15761.165761,457.1354,214687.4422,-1878.157,-157.548764,-15761.165761,-457.1354,-214687.4422,1,6,11,16,21,-1,-11,-21,6,16,76168713.24687614,165764131,761313.1576,76512,3.3],[1575.24877,784124.21657674,186764.121,7867,165733.2454,-1575.24877,-784124.21657674,-186764.121,-7867,-165733.2454,2,7,12,17,22,-2,-12,-22,7,17,7932135431.165763,76134,461313.15761,1567613461316574700,4.5,1575.24877,784124.21657674,186764.121,7867,165733.2454,-1575.24877,-784124.21657674,-186764.121,-7867,-165733.2454,2,7,12,17,22,-2,-12,-22,7,17,7932135431.165763,76134,461313.15761,1567613461316574700,4.5],[1787.1547,786413.24874,1567.1567,571.321467,1543.1657,-1787.1547,-786413.24874,-1567.1567,-571.321467,-1543.1657,3,8,13,18,23,-3,-13,-23,8,18,794312187.2187164,157361,798303.13461,176134313465,17.54,1787.1547,786413.24874,1567.1567,571.321467,1543.1657,-1787.1547,-786413.24874,-1567.1567,-571.321467,-1543.1657,3,8,13,18,23,-3,-13,-23,8,18,794312187.2187164,157361,798303.13461,176134313465,17.54],[18783.154,768431.21454,476.1654,74811.157101,782135.157431,-18783.154,-768431.21454,-476.1654,-74811.157101,-782135.157431,4,9,14,19,24,-4,-14,-24,9,19,2454231345.168761,784303431,967611.165761,15421,14.2,18783.154,768431.21454,476.1654,74811.157101,782135.157431,-18783.154,-768431.21454,-476.1654,-74811.157101,-782135.157431,4,9,14,19,24,-4,-14,-24,9,19,2454231345.168761,784303431,967611.165761,15421,14.2],[1345.145,8744.15678,74871231.1657,79831.154744,4871.15414,0,5,10,-79831.154744,20,5,10,15,20,15,-5,-15,0,0,20,79843167.4761,78613131.761313,93784.16764,165761,47.23,1345.145,8744.15678,74871231.1657,79831.154744,4871.15414,0,5,10,-79831.154744,20,5,10,15,20,15,-5,-15,0,0,20,79843167.4761,78613131.761313,93784.16764,165761,47.23],[1878.157,157.548764,15761.165761,2154.154,214687.4422,1,6,11,15,21,6,11,16,21,16,-6,-16,1,11,21,15461.1574,1654967476.165761,794313.321654,784131,62.5,1878.157,157.548764,15761.165761,2154.154,214687.4422,1,6,11,15,21,6,11,16,21,16,-6,-16,1,11,21,15461.1574,1654967476.165761,794313.321654,784131,62.5],[1575.24877,784124.21657674,186764.121,457.1354,165733.2454,2,7,12,16,22,7,12,17,22,17,-7,-17,2,12,22,78761.16764,165761.16761,71313.13467,16576134,47.23,1575.24877,784124.21657674,186764.121,457.1354,165733.2454,2,7,12,16,22,7,12,17,22,17,-7,-17,2,12,22,78761.16764,165761.16761,71313.13467,16576134,47.23],[1787.1547,786413.24874,1567.1567,7867,1543.1657,3,8,13,17,23,8,13,18,23,18,-8,-18,3,13,23,165761.5461157466,4843031.16761364,16736131.16761,16546134,14.23,1787.1547,786413.24874,1567.1567,7867,1543.1657,3,8,13,17,23,8,13,18,23,18,-8,-18,3,13,23,165761.5461157466,4843031.16761364,16736131.16761,16546134,14.23],[18783.154,768431.21454,476.1654,571.321467,782135.157431,4,9,14,18,24,9,14,19,24,19,-9,-19,4,14,24,15761,7613.1544512,9713464.165761,1546515,15.12,18783.154,768431.21454,476.1654,571.321467,782135.157431,4,9,14,18,24,9,14,19,24,19,-9,-19,4,14,24,15761,7613.1544512,9713464.165761,1546515,15.12]],\"labels\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\",\"21\",\"22\",\"23\",\"24\",\"25\",\"26\",\"27\",\"28\",\"29\",\"30\",\"31\",\"32\",\"33\",\"34\",\"35\",\"36\",\"37\",\"38\",\"39\",\"40\",\"41\",\"42\",\"43\",\"44\",\"45\",\"46\",\"47\",\"48\",\"49\"]}]'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg).have.property('payload', expected);\n\t}\n}]",
+        "x": 280,
+        "y": 1440,
+        "wires": [
+            [
+                "4936364dbc5af4b5"
+            ]
+        ]
+    },
+    {
+        "id": "a2101741601f4f1e",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 1130,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62f57469c5ae8e88",
+        "type": "json",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 1300,
+        "wires": [
+            [
+                "a2101741601f4f1e"
+            ]
+        ]
+    },
+    {
+        "id": "bef75f0ba44d161b",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Double type with 10 columns, 50 records",
+        "info": "",
+        "x": 220,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "905f585cd8eb542f",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20887673065035a7",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "date type with 2 columns and 2 records",
+        "query": "SELECT * FROM test_time;",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 540,
+        "y": 1820,
+        "wires": [
+            [
+                "fbba0fdb03ae0ef2"
+            ]
+        ]
+    },
+    {
+        "id": "109c037571f72bb0",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1820,
+        "wires": [
+            [
+                "ce0c698a18b9e2c0"
+            ]
+        ]
+    },
+    {
+        "id": "d7493f1cdcc5a5f0",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a796ea8ecb55482",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f404e490b0317ae",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb3c2744d804075f",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6299c1301a25ab1a",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 1960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbba0fdb03ae0ef2",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 780,
+        "y": 1820,
+        "wires": [
+            [
+                "905f585cd8eb542f",
+                "d7493f1cdcc5a5f0",
+                "0a796ea8ecb55482",
+                "6f404e490b0317ae",
+                "cb3c2744d804075f",
+                "6299c1301a25ab1a"
+            ]
+        ]
+    },
+    {
+        "id": "ce0c698a18b9e2c0",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": false,
+        "tests": "var expected = \"Invalid data type: c1 accept only Number type\"\nreturn [{\n\tassert: function (msg) {\n\t\tshould(msg.error).have.property('message', expected);\n\n\t}\n}]",
+        "x": 280,
+        "y": 1820,
+        "wires": [
+            [
+                "20887673065035a7"
+            ]
+        ]
+    },
+    {
+        "id": "7779645b30463ea2",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "date type with 2 columns and 2 records",
+        "info": "",
+        "x": 210,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "735228739a615892",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 2220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3a55e1db719a61a",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "Text type with 8 columns, 4 records",
+        "query": "SELECT * FROM test_text;",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 500,
+        "y": 2200,
+        "wires": [
+            [
+                "4a9f499f7a9a877a"
+            ]
+        ]
+    },
+    {
+        "id": "d1997773cb2d7587",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 2200,
+        "wires": [
+            [
+                "038ae5e54dcc7a99"
+            ]
+        ]
+    },
+    {
+        "id": "33584ad3cbbfa190",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 2140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66e584e3d39ba102",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 2180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0542c67402fe4ba",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 2260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef6b92f61d12ed77",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 2300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec0e2136528cc7a7",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 2340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a9f499f7a9a877a",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 740,
+        "y": 2200,
+        "wires": [
+            [
+                "735228739a615892",
+                "33584ad3cbbfa190",
+                "66e584e3d39ba102",
+                "a0542c67402fe4ba",
+                "ef6b92f61d12ed77",
+                "ec0e2136528cc7a7"
+            ]
+        ]
+    },
+    {
+        "id": "038ae5e54dcc7a99",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = \"Invalid data type: c1 accept only Number type\"\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg.error).have.property('message', expected);\n\t}\n}]",
+        "x": 260,
+        "y": 2200,
+        "wires": [
+            [
+                "b3a55e1db719a61a"
+            ]
+        ]
+    },
+    {
+        "id": "8484514e87d39126",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Text type with 8 columns, 4 records",
+        "info": "",
+        "x": 180,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "b0a42077cee32c42",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 710,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b38dba6fdab19828",
+        "type": "catch",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "scope": [
+            "fbba0fdb03ae0ef2"
+        ],
+        "uncaught": false,
+        "x": 450,
+        "y": 1880,
+        "wires": [
+            [
+                "b0a42077cee32c42"
+            ]
+        ]
+    },
+    {
+        "id": "4642178dfec06bdd",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 730,
+        "y": 2260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70be11655627b99f",
+        "type": "catch",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "scope": [
+            "4a9f499f7a9a877a"
+        ],
+        "uncaught": false,
+        "x": 450,
+        "y": 2260,
+        "wires": [
+            [
+                "4642178dfec06bdd"
+            ]
+        ]
+    },
+    {
+        "id": "88d3369835bd6b7e",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 2600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a9c51295f182623",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 120,
+        "y": 2580,
+        "wires": [
+            [
+                "f20a15089dfdb955"
+            ]
+        ]
+    },
+    {
+        "id": "b785bd671ad7703b",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 2520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "857fd3f6e96216d2",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 2560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15cacf6d7a63371c",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 2640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fdbd03ed89e35db0",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 2680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cddb525cf9f2737",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 2720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a92792fd0b862ed",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 740,
+        "y": 2580,
+        "wires": [
+            [
+                "88d3369835bd6b7e",
+                "b785bd671ad7703b",
+                "857fd3f6e96216d2",
+                "15cacf6d7a63371c",
+                "fdbd03ed89e35db0",
+                "3cddb525cf9f2737"
+            ]
+        ]
+    },
+    {
+        "id": "f20a15089dfdb955",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = 'Invalid object in the payload array at the index 0'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg.error).have.property('message', expected);\n\t}\n}]",
+        "x": 300,
+        "y": 2580,
+        "wires": [
+            [
+                "415d55153198c7fa"
+            ]
+        ]
+    },
+    {
+        "id": "f2beae261ce6d6f8",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Item in the array is not a JSON object",
+        "info": "",
+        "x": 190,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "cf8e8c383b4dbfd4",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f559b732ea2abd06",
+        "type": "postgresql",
+        "z": "12e118a8f9046434",
+        "name": "1 column and have checked on label",
+        "query": "SELECT * FROM test_1_column;",
+        "postgreSQLConfig": "6675eaf71892862a",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 510,
+        "y": 3000,
+        "wires": [
+            [
+                "564d0d8f6cab1222"
+            ]
+        ]
+    },
+    {
+        "id": "3a4a0142d8ce2987",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 3000,
+        "wires": [
+            [
+                "06c9225969369693"
+            ]
+        ]
+    },
+    {
+        "id": "e9730bc57ade8a97",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 2940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d266b955433ac04",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 2980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac11b0362e898001",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70255aacfd6ac669",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7909deccc5289639",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "564d0d8f6cab1222",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": true,
+        "x": 760,
+        "y": 3000,
+        "wires": [
+            [
+                "cf8e8c383b4dbfd4",
+                "e9730bc57ade8a97",
+                "0d266b955433ac04",
+                "ac11b0362e898001",
+                "70255aacfd6ac669",
+                "7909deccc5289639"
+            ]
+        ]
+    },
+    {
+        "id": "06c9225969369693",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = 'Cannot mark the first column as label'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg.error).have.property('message', expected);\n\t}\n}]",
+        "x": 260,
+        "y": 3000,
+        "wires": [
+            [
+                "f559b732ea2abd06"
+            ]
+        ]
+    },
+    {
+        "id": "9dfbd0f3dc059907",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "If there is one column, it cannot be marked as label ",
+        "info": "",
+        "x": 230,
+        "y": 2940,
+        "wires": []
+    },
+    {
+        "id": "415d55153198c7fa",
+        "type": "function",
+        "z": "12e118a8f9046434",
+        "name": "function 1",
+        "func": "msg.payload = JSON.parse('[1,2,3]');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 2580,
+        "wires": [
+            [
+                "4a92792fd0b862ed"
+            ]
+        ]
+    },
+    {
+        "id": "27fc4c4f8f87e383",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ad8f10a291fab41",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 120,
+        "y": 3360,
+        "wires": [
+            [
+                "ea383fe9597fce74"
+            ]
+        ]
+    },
+    {
+        "id": "e24171f06035b249",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5f52f3a85be2e2a",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4cbc2d848abad9a",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6ac1d983a711f3f",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7661c00af7099510",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0eabae488426a68",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 740,
+        "y": 3360,
+        "wires": [
+            [
+                "27fc4c4f8f87e383",
+                "e24171f06035b249",
+                "b5f52f3a85be2e2a",
+                "a4cbc2d848abad9a",
+                "a6ac1d983a711f3f",
+                "7661c00af7099510"
+            ]
+        ]
+    },
+    {
+        "id": "ea383fe9597fce74",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = 'Object is inconsistent at the index 1'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg.error).have.property('message', expected);\n\t}\n}]",
+        "x": 280,
+        "y": 3360,
+        "wires": [
+            [
+                "b7cac052b11c50f9"
+            ]
+        ]
+    },
+    {
+        "id": "c0c452cf1235a3f8",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Properties of all objects are not consistent ",
+        "info": "",
+        "x": 200,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "b7cac052b11c50f9",
+        "type": "function",
+        "z": "12e118a8f9046434",
+        "name": "function 2",
+        "func": "msg.payload = [{ c1: 3, c2: 4 }, { c2: 5, c6: 5 }];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 3360,
+        "wires": [
+            [
+                "f0eabae488426a68"
+            ]
+        ]
+    },
+    {
+        "id": "d1fb66132725b03a",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "line chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a77ed029a827d3d0",
+        "type": "inject",
+        "z": "12e118a8f9046434",
+        "name": "click me",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "json",
+        "x": 120,
+        "y": 3740,
+        "wires": [
+            [
+                "0f147b95b43cd0aa"
+            ]
+        ]
+    },
+    {
+        "id": "62787cb2055c8290",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b2751f8ce7fc201",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "bar chart (H)",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ec3839819486c8e",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "pie chart",
+        "chartType": "pie",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 3800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "039aec64a2a9b6b2",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "polar chart",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2aa3fe889a3989d3",
+        "type": "ui_chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "group": "8334a65f1aefbbec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "radar chart",
+        "chartType": "radar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 3880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4a960c30e16c896",
+        "type": "db2chart",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "firstcol": false,
+        "x": 740,
+        "y": 3740,
+        "wires": [
+            [
+                "d1fb66132725b03a",
+                "62787cb2055c8290",
+                "2b2751f8ce7fc201",
+                "3ec3839819486c8e",
+                "039aec64a2a9b6b2",
+                "2aa3fe889a3989d3"
+            ]
+        ]
+    },
+    {
+        "id": "0f147b95b43cd0aa",
+        "type": "test inject",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "onstart": true,
+        "tests": "var expected = 'Invalid input message payload, neither array nor single object'\nreturn [{\n\tassert: function(msg){\n\t\tshould(msg.error).have.property('message', expected);\n\t}\n}]",
+        "x": 300,
+        "y": 3740,
+        "wires": [
+            [
+                "cbdfe21215557569"
+            ]
+        ]
+    },
+    {
+        "id": "b7dfa974d3ed987b",
+        "type": "comment",
+        "z": "12e118a8f9046434",
+        "name": "Input message payload is not an array also an object",
+        "info": "",
+        "x": 230,
+        "y": 3680,
+        "wires": []
+    },
+    {
+        "id": "a15787d3b0374cd0",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 770,
+        "y": 2660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98c74635769cbef1",
+        "type": "catch",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "scope": [
+            "4a92792fd0b862ed"
+        ],
+        "uncaught": false,
+        "x": 490,
+        "y": 2660,
+        "wires": [
+            [
+                "a15787d3b0374cd0"
+            ]
+        ]
+    },
+    {
+        "id": "9a30eb8a2fd4e2b0",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 730,
+        "y": 3060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39c9f466b442655e",
+        "type": "catch",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "scope": [
+            "564d0d8f6cab1222"
+        ],
+        "uncaught": false,
+        "x": 450,
+        "y": 3060,
+        "wires": [
+            [
+                "9a30eb8a2fd4e2b0"
+            ]
+        ]
+    },
+    {
+        "id": "311f7828e1e202d4",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 770,
+        "y": 3440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b46ed478f0357b8",
+        "type": "catch",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "scope": [
+            "f0eabae488426a68"
+        ],
+        "uncaught": false,
+        "x": 490,
+        "y": 3440,
+        "wires": [
+            [
+                "311f7828e1e202d4"
+            ]
+        ]
+    },
+    {
+        "id": "7cbf271d52f67154",
+        "type": "assert",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "x": 770,
+        "y": 3800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6e84a329f10d957",
+        "type": "catch",
+        "z": "12e118a8f9046434",
+        "name": "",
+        "scope": [
+            "d4a960c30e16c896"
+        ],
+        "uncaught": false,
+        "x": 490,
+        "y": 3800,
+        "wires": [
+            [
+                "7cbf271d52f67154"
+            ]
+        ]
+    },
+    {
+        "id": "cbdfe21215557569",
+        "type": "function",
+        "z": "12e118a8f9046434",
+        "name": "function 3",
+        "func": "msg.payload = 1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 3740,
+        "wires": [
+            [
+                "d4a960c30e16c896"
+            ]
+        ]
+    },
+    {
+        "id": "8334a65f1aefbbec",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "2bd1d7adca5f951b",
+        "order": 1,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6675eaf71892862a",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "15432",
+        "portFieldType": "num",
+        "database": "postgres",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "",
+        "userFieldType": "str",
+        "password": "",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "2bd1d7adca5f951b",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
