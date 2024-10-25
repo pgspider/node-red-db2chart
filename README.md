@@ -2,7 +2,7 @@
 
 db2chart node is the Node-RED node to convert database data to the form that is compatible to Charts on Dashboard.
 
-The input of db2chart node is the output of database node such as PostgreSQL node ([node-red-contrib-postgresql](https://flows.nodered.org/node/node-red-contrib-postgresql)), MySQL node ([node-red-node-mysql](https://flows.nodered.org/node/node-red-node-mysql)) and SQL Server node ([node-red-contrib-mssql-plus](https://flows.nodered.org/node/node-red-contrib-mssql-plus)).  
+The input of db2chart node is the output of database node such as PostgreSQL node ([node-red-contrib-postgresql](https://flows.nodered.org/node/node-red-contrib-postgresql)), MySQL node ([node-red-node-mysql](https://flows.nodered.org/node/node-red-node-mysql)), SQL Server node ([node-red-contrib-mssql-plus](https://flows.nodered.org/node/node-red-contrib-mssql-plus)), SQLite node ([node-red-node-sqlite](https://flows.nodered.org/node/node-red-node-sqlite)) and other nodes that have the same output format as these nodes.  
 And the output of db2chart node is the input of Chart nodes ([node-red-dashboard](https://github.com/node-red/node-red-dashboard)).
 
 Example Input/Output of db2chart in [Appendix](#appendix).
